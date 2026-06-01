@@ -5,55 +5,43 @@
 AnythingGraph give your AI the right data — not all of it. 
 We connect operational data into a governed graph so humans and AI can act on business reality—with control, clarity, and only the context that matters
 
-## Product overview
+## Our Mission
 
-Most organizations already have the data they need; it is just spread across tools, folders, and teams. AnythingGraph is a **context layer**: you define the record types and relationships that match how your business actually works, bring data in through uploads or webhooks, and see how accounts, people, orders, and documents link together on a visual graph.
+Make ontology-driven systems as easy to adopt as modern application frameworks, enabling organizations to transform unstructured information into governed, AI-ready knowledge without requiring ontology experts.
 
-You can install a ready-made playbook, connect your own AI agents, and let them work with linked business data — only the part you choose, with access rules built in.
+We believe knowledge graphs, semantic models, and relationship-based authorization should not require months of design, specialized expertise, or expensive consulting engagements. Our platform enables teams to define ontologies as code, deploy domain-specific applications through reusable playbooks, and immediately convert unstructured enterprise data into structured, governed knowledge that both humans and AI systems can understand.
+
+By combining Ontology-as-Code, MCP-native architecture, built-in ReBAC, and LLM-ready schemas, we make enterprise knowledge systems accessible, composable, and production-ready from day one.
+
+## Feature Highlights
+- **Ontology-as-Code** Ontologies become maintainable engineering assets rather than one-off consulting projects.
+- **Zero-Complexity Entity & Relationship Modeling** Any engineering team can build ontology-driven applications.
+- **ReBAC Built-In by Default** Security and governance become part of the ontology instead of an afterthought.
+- **⁠MCP-Native Foundation** Future-proof architecture for the emerging AI agent ecosystem.
+- **⁠Playbook-as-Application Architecture** Prebuilt solutions for common use cases, scoped ontology in multi-domain systems without data leakage or governance complexity.
 
 
 ## Who it is for
 
+- **AI Platform Teams** Building enterprise AI systems that require structured, governed knowledge.
 - **Operations and business users** who need structured record types (forms), relationships, and light automation without a multi-month IT project
 - **Data and integration owners** who want a durable, queryable picture of entities and how they connect across sources
-- **Developers and AI assistants** that need reliable APIs and MCP access to read and write the same graph agents and people see in the UI
+- **SaaS Builders and Internal Platform Teams** Needing a relationship-aware application foundation with minimal setup.
+- **Regulated Enterprises** Organizations that require auditability, access control, and governance while adopting AI.
 
 ## Problems it addresses
 
-| Challenge | How AnythingGraph helps |
-|-----------|-------------------------|
-| Data stuck in PDFs, email, and spreadsheets | Ingest and map into shared **record types** with validation |
-| “How is this customer related to that order?” is hard to answer | Model **relationships** between records and explore them visually |
-| Every new source needs a custom script | **Playbooks** and **workflows** package repeatable ingest pipelines |
-| Business questions wait on engineering for SQL | **Query Studio** (when RDF/SPARQL is enabled) supports natural-language exploration over the graph |
+Organizations are drowning in unstructured data spread across documents, emails, tickets, contracts, CRM systems, and internal knowledge bases.
 
-## What you can do
+While LLMs can understand this information, they struggle to consistently produce governed, reusable, and permission-aware structured knowledge. 
+Existing ontology and knowledge graph solutions require:
 
-- **Define record types** — Schemas for invoices, accounts, employees, products, or anything specific to your domain.
-- **Link records** — Connect rows across types (for example contact → account → opportunity) so navigation follows real business structure.
-- **Use playbooks** — Install starter packs with record types, relationships, and workflows you can customize.
-- **Ingest documents and files** — Upload or send webhooks (JSON, CSV, PDF, and more); workflows create or update rows and route exceptions to review.
-- **Automate with workflows** — Trigger on upload or HTTP, validate and map fields, create relationships, and handle failures explicitly.
-- **Explore the graph** — See how types and instances connect—useful for onboarding, audits, and data-quality checks.
-- **Work with AI tools** — MCP integration lets agents list entities, rows, and relationships against the same data the dashboard uses.
+	•	Complex ontology modeling
+	•	Specialized semantic web expertise
+	•	Long implementation cycles
+	•	Custom access control implementations
+	•	Significant engineering investment before delivering value
 
-## Typical use cases
+As a result, most enterprises never operationalize their knowledge architecture, and AI initiatives remain disconnected from business systems.
 
-1. **Invoice and document intake** — Pull vendor, amount, and dates from invoices into structured records; link to vendors or cost centers.
-2. **Lightweight CRM** — Accounts, contacts, leads, and opportunities with clear links and ingest from spreadsheets or external systems.
-3. **Operational hub** — A shared graph of corporations, people, products, or projects that other tools and automations reference.
-4. **Integration landing** — Normalize webhook payloads through workflows before records spread to downstream systems.
 
-## Playbook catalog (dashboard)
-
-Install starter packs from **Playbooks** in the dashboard (`dashboard/backend/src/playbook/playbooks/`):
-
-| Section | Playbooks |
-|---------|-----------|
-| Start here | Organizational graph, CRM relationship graph |
-| Integrate data | Reference data alignment, Data quality stewardship, Identity golden record |
-| Operations | Invoice records (structured), Procure to pay, Support case management |
-| AI & documents | Document registry |
-| Advanced | Product composition |
-
-Each playbook includes record types, schema relationships, an ingest workflow, and MCP instructions (`playbook id` in the pack).
